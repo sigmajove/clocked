@@ -266,7 +266,7 @@ void RunWorkerThreads() {
         next_tick = start_time + (++num_ticks) * tick;
       }
     } else if (global.num_threads_running == 0) {
-      // If there is no data left (we ignore fewer then num_buckets
+      // If there is no data left (we ignore fewer than num_buckets
       // at the end), it's time to stop.
       break;
     } else {
