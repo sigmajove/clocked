@@ -148,7 +148,6 @@ class RunningAverage {
   uint64_t count_ = 0;  // The number of times Add has been called.
 };
 
-
 void RunningAverage::Aggregate() {
   double smallest = std::numeric_limits<double>::max();
   double largest = -smallest;
